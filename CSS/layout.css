@@ -1,0 +1,285 @@
+@import url(//db.onlinewebfonts.com/c/cefd416d4a810c38e8e2987afa6ef07f?family=Grendel);
+header .left {
+   padding-left: 20%;
+}
+
+header {
+   text-align: center;
+   border-bottom: rgba(255, 255, 255, 0.2) solid 0.01px;
+}
+
+.logo {
+   font-size: 40px;
+   font-family: sans-serif;
+   color: white;
+   float: left;
+   padding-top: 20px;
+}
+
+/* NAVVBAR */
+
+@font-face {
+   src: url(/Font/Montserrat-Light.otf);
+   font-family: Montserrat Light;
+}
+
+@font-face {
+   src: url(/Font/GRENDB__.TTF);
+   font-family: Grendel;
+}
+
+.navbar button {
+   font-weight: 600;
+   color: white;
+   font-size: 15px;
+   background-color: transparent;
+   border: transparent;
+   padding: 15px 25px 15px 25px;
+   margin-top: 2%;
+   letter-spacing: 2px;
+}
+
+.snip {
+   border: none;
+   cursor: pointer;
+   outline: none;
+   position: relative;
+}
+
+.snip:before, .snip:after {
+   border-color: transparent;
+   -webkit-transition: all 0.35s;
+   transition: all 0.35s;
+   border-style: solid;
+   border-width: 0;
+   content: "";
+   height: 0px;
+   position: absolute;
+   width: 0px;
+}
+
+.snip:after {
+   border-bottom-width: 2px;
+   border-color: white;
+   bottom: -5px;
+   left: 0px;
+}
+
+.snip:hover, .snip.hover {
+   background-color: rgba(255, 255, 255, 0.2);
+   ;
+   box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.8);
+}
+
+.snip:hover:before, .snip.hover:before, .snip:hover:after, .snip.hover:after {
+   height: 100%;
+   width: 100%;
+}
+
+/* SEARCH */
+
+.search {
+   float: right;
+}
+
+.search button {
+   font-size: 20px;
+   color: white;
+   background-color: rgba(255, 255, 255, 0.2);
+   padding: 40px;
+   margin-right: 15px;
+   font-weight: 600;
+   border: none;
+}
+
+.search button:hover {
+   background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Slide Background */
+
+.first {
+   font-size: 5px;
+   width: 100%;
+   display: grid;
+   /* Only change code below this line */
+   grid-template-columns: 15% 70% 15%;
+}
+
+@keyframes backgrounds {
+   0% {
+      background-image: url("/Background/bgr1.jpg");
+   }
+   12% {
+      background-image: url("/Background/bgr2.jpg");
+   }
+   24% {
+      background-image: url("/Background/bgr3.jpg");
+   }
+   36% {
+      background-image: url("/Background/bgr4.jpg");
+   }
+   48% {
+      background-image: url("/Background/bgr1.jpg");
+   }
+   60% {
+      background-image: url("/Background/bgr2.jpg");
+   }
+   72% {
+      background-image: url("/Background/bgr3.jpg");
+   }
+   84% {
+      background-image: url("/Background/bgr4.jpg");
+   }
+   100% {
+      background-image: url("/Background/bgr1.jpg");
+   }
+}
+
+body {
+   background: no-repeat;
+   background-size: cover;
+   position: relative;
+   width: 100%;
+   height: 100%;
+   animation-name: backgrounds;
+   animation-duration: 100s;
+   animation-iteration-count: infinite;
+   animation-delay: -7s;
+}
+
+/*  */
+
+.lefttwo {
+   color: rgba(255, 255, 255, 0.6);
+   display: grid;
+   grid-template-rows: 35% 30% 35%;
+   margin-left: 50px;
+   font-size: 30px;
+}
+.white{
+   color: white;
+   border-radius: 50%;
+}
+.fa-circle{
+   margin-left: -50px;
+}
+.container {
+   font-size: 40px;
+   width: 100%;
+   display: grid;
+   /* Only change code below this line */
+   grid-template-columns: 15% 70% 15%;
+   /* Only change code above this line */
+}
+
+.center {
+   line-height: 0px;
+}
+
+h1 {
+   color: rgb(255, 255, 255);
+   opacity: 35%;
+   font-size: 104px;
+   font-family: Grendel;
+}
+
+h2 {
+   color: white;
+   font-size: 55px;
+   line-height: 70px;
+   width: 700px;
+   font-family: Grendel;
+   margin-top: -5px;
+}
+
+h3 {
+   font-family: Montserrat Light;
+   font-size: 13px;
+   width: 450px;
+   color: white;
+   line-height: 25px;
+   opacity: 100%;
+   margin-top: -35px;
+}
+
+.shop {
+   color: white;
+   border-radius: 50px;
+   padding: 15px 30px 15px 30px;
+   background-color: #81796D;
+   border: none;
+   opacity: 0.8;
+   letter-spacing: 2px;
+   font-size: 15px;
+   font-weight: 700;
+}
+
+.arrow {
+   margin-left: 15px;
+   font-size: 15px;
+}
+
+.shopnow button:hover {
+   background-color: tomato;
+   padding: 20px 35px 20px 35px;
+}
+
+/* Social Icon */
+
+.social-icon {
+   float: right;
+   border-left: rgba(255, 255, 255, 0.2) solid 1px;
+   width: 100px;
+   height: 104vh;
+   display: flex;
+   margin-right: 15px;
+   text-align: center;
+   line-height: 10px;
+   align-items: center;
+   display: grid;
+}
+
+.social-icon button {
+   border: none;
+   background: transparent;
+   font-size: 20px;
+   color: white;
+   margin-left: 0px;
+   padding: 0;
+}
+
+.social-icon button:hover {
+   font-size: 30px;
+}
+
+/* BOOK */
+
+.books {
+   margin-top: 73px;
+   display: flex;
+   background-color: rgba(238, 238, 238, 0.45);
+   border-radius: 30px 30px 0 0;
+   margin-bottom: -105px;
+}
+
+.book {
+   padding: 40px 0px 20px 20px;
+   display: flex;
+   margin-left: 15px;
+}
+
+h4 {
+   color: white;
+   font-size: 15px;
+   line-height: 18px;
+   width: 85px;
+   margin-left: 15px;
+   margin-top: 15px;
+   font-family: Montserrat Light;
+}
+
+.book img {
+   width: 35%;
+   height: 90%;
+}
